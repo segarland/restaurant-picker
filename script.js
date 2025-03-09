@@ -3,7 +3,7 @@ var selectedItems = [];
 async function displayLogos() {
     const container = document.getElementById('logos-container');
     try {
-      const response = await fetch('./Restaurant Logos');
+      const response = await fetch('./restaurant-logos');
       const text = await response.text();
       const parser = new DOMParser();
       const htmlDocument = parser.parseFromString(text, 'text/html');
